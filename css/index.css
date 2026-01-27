@@ -1,0 +1,106 @@
+/* background color, text color, font family */ 
+body {
+    background-color: rgb(197, 204, 204);
+    color: black;
+    font-family:'Bitcount Single', sans-serif;
+    margin: 0;
+    
+}
+/* menu navegacion -  */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: #389277;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+nav li {
+    margin: 0 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #c14f12;
+}
+/*  style of Name, and picture */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+img {
+    display: block;
+    height: auto;
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;    
+    border: 5px solid #2c3e50;
+}
+/* Spacing & Alignmen --- padding-margin*/
+section {
+    background-color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: rgb(23, 23, 23);
+    border-bottom: 2px solid #517878;
+    padding-bottom: 5px;
+}
+/* Experience section styles */
+#Experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+#Experience li { 
+    background-color: #e8f8f5; 
+    border-left: 5px solid #1abc9c; 
+    margin-bottom: 10px;     
+    padding: 15px;           
+    border-radius: 0 5px 5px 0; 
+}
+/* social media settings */
+#Connect a {
+    color: #131413;          
+    font-size: 1.9rem;      
+    text-decoration: none;
+    font-weight: bold;
+}
+/*positioning social media logos*/
+#Connect ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    gap: 20px;
+
+}
+#Connect a:hover {
+    text-decoration: underline;
+    color: #c14f12;             
+}
+/* icon styles */
+.fa-brands {
+    margin-right: 8px; 
+    font-size: 2rem; 
+}
+
+.fa-github { color: #050505; }
+.fa-linkedin { color: #0077b5; }
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #555;
+}
