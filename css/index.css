@@ -6,6 +6,13 @@ body {
     margin: 0;
     
 }
+/* navigation bar static styles */
+nav {
+    position: sticky;  
+    top: 0;            
+    z-index: 1000;     
+    padding-top: 10px; 
+}
 /* menu navegacion -  */
 nav ul {
     display: flex;
@@ -60,6 +67,9 @@ h2 {
 #Experience ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 #Experience li { 
     background-color: #e8f8f5; 
@@ -67,6 +77,7 @@ h2 {
     margin-bottom: 10px;     
     padding: 15px;           
     border-radius: 0 5px 5px 0; 
+    flex: 1 1 45%;
 }
 /* social media settings */
 #Connect a {
