@@ -2,7 +2,7 @@
 body {
     background-color: rgb(197, 204, 204);
     color: black;
-    font-family:'Bitcount Single', sans-serif;
+    font-family: 'Roboto', sans-serif; 
     margin: 0;
     
 }
@@ -67,9 +67,9 @@ h2 {
 #Experience ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 #Experience li { 
     background-color: #e8f8f5; 
@@ -77,7 +77,6 @@ h2 {
     margin-bottom: 10px;     
     padding: 15px;           
     border-radius: 0 5px 5px 0; 
-    flex: 1 1 45%;
 }
 /* social media settings */
 #Connect a {
@@ -114,4 +113,44 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
     color: #555;
+}
+
+/* TABLET (Max: 768px) */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        color: #000000;
+    }
+
+    section {
+        padding: 15px;
+        width: 90%;
+    }
+}
+
+/* MOBILE (Max: 480px) */
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    img {
+        max-width: 50%;
+        border: 5px solid black;
+    }
+    
+    #Experience li {
+        width: auto; 
+    }
 }
