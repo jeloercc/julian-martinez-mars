@@ -8,12 +8,12 @@ const thisYear = today.getFullYear();
 
 const footer = document.querySelector('footer');
 const copyright= document.createElement('p');
-copyright.textContent = ` Julian Martinez - class mars ${thisYear}`;
+copyright.textContent = `© Julian Martinez - class mars ${thisYear}`;
 footer.appendChild(copyright);
 
 // skills 
 const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'MCP', 'AWS', "Google Cloud", "Docker", "Metrology", "data analysis", "problem-solving", "ISO/IEC 17025", "quality management", "calibration", "technical support", "team collaboration"];
-const skillsSection = document.querySelector('#Skills');
+const skillsSection = document.querySelector('#skills');
 const skillsList = skillsSection.querySelector('ul');
 
 for (let i = 0; i < skills.length; i++) {
@@ -26,7 +26,7 @@ const connectLinks = [
   { name: 'GitHub', url: 'https://github.com/jeloercc', icon: 'fa-brands fa-github-alt' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/julian-martinez-559492201/', icon: 'fa-brands fa-linkedin' }
 ];
-const connectSection = document.querySelector('#Connect');
+const connectSection = document.querySelector('#connect');
 const connectList = connectSection.querySelector('ul');
 
 for (let i = 0; i < connectLinks.length; i++) {
