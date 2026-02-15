@@ -8,7 +8,7 @@ const thisYear = today.getFullYear();
 
 const footer = document.querySelector('footer');
 const copyright= document.createElement('p');
-copyright.innerHTML = `&copy; Julian Martinez - class mars ${thisYear}`;
+copyright.textContent = ` Julian Martinez - class mars ${thisYear}`;
 footer.appendChild(copyright);
 
 // skills 
@@ -18,12 +18,12 @@ const skillsList = skillsSection.querySelector('ul');
 
 for (let i = 0; i < skills.length; i++) {
     const skill = document.createElement('li');
-    skill.innerHTML = skills[i];
+    skill.textContent = skills[i];
     skillsList.appendChild(skill);
     }
 // social media links
 const connectLinks = [
-  { name: 'GitHub', url: 'https://github.com/jeloercc', icon: 'fa-brands fa-github-alt',color: '#333' },
+  { name: 'GitHub', url: 'https://github.com/jeloercc', icon: 'fa-brands fa-github-alt' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/julian-martinez-559492201/', icon: 'fa-brands fa-linkedin' }
 ];
 const connectSection = document.querySelector('#Connect');
@@ -35,7 +35,7 @@ for (let i = 0; i < connectLinks.length; i++) {
     
     link.href = connectLinks[i].url;
     link.target = "_blank";
-    link.innerText = connectLinks[i].name;
+    link.textContent = " " + connectLinks[i].name;
 
     const icon = document.createElement('i');
     icon.className = connectLinks[i].icon;
