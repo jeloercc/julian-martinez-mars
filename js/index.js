@@ -21,6 +21,8 @@ for (let i = 0; i < skills.length; i++) {
     skill.textContent = skills[i];
     skillsList.appendChild(skill);
     }
+
+
 // social media links
 const connectLinks = [
   { name: 'GitHub', url: 'https://github.com/jeloercc', icon: 'fa-brands fa-github-alt' },
@@ -47,17 +49,19 @@ for (let i = 0; i < connectLinks.length; i++) {
 
     //Handle Message Form Submit & Display Messages
     const messageForm = document.forms.leave_message;
+    const messageSection = document.getElementById('messages');
+    messageSection.style.display = 'none';
 
-  messageForm.addEventListener('submit', function(event) {
+    messageForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const usersName = event.target.usersName.value;
     const usersEmail = event.target.usersEmail.value;
     const usersMessage = event.target.usersMessage.value;
-    
+    messageSection.style.display = 'block';
+
     console.log(usersName, usersEmail, usersMessage);
     
-    //Display messages in list 
-    const messageSection = document.getElementById('messages');
+    //Display messages in list
     const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
     
@@ -72,9 +76,28 @@ for (let i = 0; i < connectLinks.length; i++) {
     removeButton.addEventListener('click', function() {
         const entry = removeButton.parentNode;
         entry.remove();
+     if (messageList.children.length === 0) {
+          messageSection.style.display = 'none';
+        } 
     });
 
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
     messageForm.reset();
 });
+
+fetch('https://api.github.com/users/jeloercc/repos')
+  .then(response => response.json())
+  .then(repositories=> {
+    console.log(repositories);
+    const projectSection = document.getElementById('projects');
+    const projectList = projectSection.querySelector('ul');
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement('li');
+        project.textContent = repositories[i].name;
+        projectList.appendChild(project);
+    }
+  })
+ .catch(error => {
+    console.error('Error fetching data:', error);
+  });
