@@ -94,6 +94,26 @@ h2 {
     font-weight: bold;
     box-shadow: 2px 2px 5px rgba(53, 76, 92, 0.2);
 }
+/* the Projects section  */
+/* Projects section styles */
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#projects li {
+    background-color: #e8f8f5;     
+    border-top: 5px solid #55a793; 
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #100f0f;
+    text-align: center
+}
+
 /* social media settings */
 #connect a {
     color: #121312;          
