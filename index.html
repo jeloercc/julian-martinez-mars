@@ -3,41 +3,128 @@
      <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio of Julian Martinez.">
-        <title>Julian Martinez Portfolio</title>
+
+        <!-- Primary Meta Tags -->
+        <title>Julian Martinez | Software Engineer & Metrology Expert</title>
+        <meta name="title" content="Julian Martinez | Software Engineer & Metrology Expert">
+        <meta name="description" content="Portfolio of Julian Martinez. Bridging extreme precision and innovative technology to build robust software architecture.">
+        <meta name="keywords" content="Julian Martinez, Software Engineer, Web Developer, Metrology, Full Stack, Portfolio, GitHub, API">
+        <meta name="author" content="Julian Martinez">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://your-domain.com/">
+        <meta property="og:title" content="Julian Martinez | Software Engineer">
+        <meta property="og:description" content="Bridging extreme precision and innovative technology to build robust software architecture. Check out my latest projects and GitHub activity.">
+        <meta property="og:image" content="https://your-domain.com/Images/og-image.jpg">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://your-domain.com/">
+        <meta property="twitter:title" content="Julian Martinez | Software Engineer">
+        <meta property="twitter:description" content="Bridging extreme precision and innovative technology to build robust software architecture. Check out my latest projects and GitHub activity.">
+        <meta property="twitter:image" content="https://your-domain.com/Images/og-image.jpg">
+
+        <!-- Favicon (Terminal Icon SVG) -->
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
      </head>
      <body>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                 <li><a href="#connect">Connect</a></li>
-                 <li><a href="#contact">Leave a Message</a></li>
+        <div class="grid-background"></div>
+
+        <nav aria-label="Main Navigation">
+            <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="primary-navigation">
+                <li><a href="#about">01. About</a></li>
+                <li><a href="#experience">02. Experience</a></li>
+                <li><a href="#skills">03. Skills</a></li>
+                <li><a href="#projects">04. Projects</a></li>
+                 <li><a href="#connect">05. Connect</a></li>
+                 <li><a href="#contact">06. Contact</a></li>
             </ul>
        </nav>
-           <h1>Julian Martinez</h1>
-           <img src="Images/1758208863883.jpeg" alt="Julian Profile Picture" height="200">
-       <section id="about">
-          <h2>About</h2>
-            <p>
-                As a student at Code the Dream, I combine a professional background in metrology with the creative perspective of an art lover.
-                This unique mix allows me to approach technology with both extreme precision and innovative thinking. 
-                I am a highly persistent individual, fueled by an unwavering enthusiasm for learning and staying at the forefront of innovation. 
-                Beyond my formal studies, I am constantly implementing personal projects—from building cloud-based infrastructures to advanced home automation. 
-                By integrating AI and emerging technologies into my daily life, 
-                I actively seek to solve real-world problems through hands-on technical execution.
-            </p>
-       </section>
 
-       <section id="experience">
-          <h2>Experience</h2>
+       <header class="hero">
+           <div class="hero-content">
+               <div class="hero-image-container">
+                   <img src="Images/1758208863883.jpeg" alt="Julian Profile Picture" height="150" loading="lazy">
+                   <div class="status-badge" aria-label="System Online">
+                       <span class="pulse-dot"></span> SYS_ONLINE
+                   </div>
+               </div>
+               <div class="hero-text-container">
+                   <p class="terminal-prompt">> root@jeloercc:~$ <span id="typewriter"></span><span class="cursor">_</span></p>
+                   <h1>Julian Martinez</h1>
+                   <p class="hero-description">// Bridging extreme precision and innovative technology to build robust software architecture.</p>
+               </div>
+           </div>
+       </header>
+
+       <!-- Bento Grid Container for modern layout -->
+       <div class="bento-container">
+           <section id="about" class="bento-item span-2 panel">
+              <h2><span class="cmd-icon">_</span> About.sys</h2>
+                <p>
+                    As a student at Code the Dream, I combine a professional background in metrology with the creative perspective of an art lover.
+                    This unique mix allows me to approach technology with both extreme precision and innovative thinking.
+                    I am a highly persistent individual, fueled by an unwavering enthusiasm for learning and staying at the forefront of innovation.
+                    Beyond my formal studies, I am constantly implementing personal projects—from building cloud-based infrastructures to advanced home automation.
+                    By integrating AI and emerging technologies into my daily life,
+                    I actively seek to solve real-world problems through hands-on technical execution.
+                </p>
+           </section>
+
+           <!-- Location & Time API Widget -->
+           <section id="location" class="bento-item panel">
+              <h2><span class="cmd-icon">_</span> Location.sys</h2>
+              <div class="location-widget">
+                  <p class="city-text">Raleigh, NC [US]</p>
+                  <p id="local-time" class="time-text">--:-- --</p>
+                  <p class="timezone-text">DATETIME_LOCAL</p>
+              </div>
+           </section>
+
+           <section id="skills" class="bento-item span-2 panel">
+              <h2><span class="cmd-icon">_</span> Competencies.dll</h2>
+              <ul></ul>
+           </section>
+
+           <!-- New GitHub Progress Panel -->
+           <section id="github-stats" class="bento-item span-2 panel">
+              <h2><span class="cmd-icon">_</span> Metrics.sys</h2>
+              <div class="stats-container">
+                  <img class="gh-stat-img" src="https://github-readme-stats.vercel.app/api?username=jeloercc&show_icons=true&theme=transparent&title_color=00ffcc&text_color=e0e0e0&icon_color=00ffcc&border_color=333333&hide_border=false" alt="GitHub Stats" loading="lazy">
+                  <img class="gh-stat-img" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeloercc&layout=compact&theme=transparent&title_color=00ffcc&text_color=e0e0e0&border_color=333333" alt="Top Languages" loading="lazy">
+              </div>
+           </section>
+
+           <!-- API Integrations -->
+           <section id="activity" class="bento-item panel">
+              <h2><span class="cmd-icon">_</span> Git_Stream.log</h2>
+              <div id="activity-status" class="sr-only" aria-live="polite"></div>
+              <ul id="activity-list" class="activity-feed">
+                  <!-- JS injected GitHub Events -->
+              </ul>
+           </section>
+
+           <section id="articles" class="bento-item span-2 panel">
+              <h2><span class="cmd-icon">_</span> Dev_Articles.json</h2>
+              <div id="articles-status" class="sr-only" aria-live="polite"></div>
+              <div id="articles-container" class="articles-grid">
+                  <!-- JS injected Dev.to Articles -->
+              </div>
+           </section>
+       </div>
+
+       <section id="experience" class="panel">
+          <h2><span class="cmd-icon">_</span> Experience.log</h2>
           <ul>
                <li><strong>Metrology & ISO Standards:</strong> Expert in calibration, traceability, and the implementation of ISO/IEC 17025 standards, ensuring the highest level of precision and quality control.</li>
                <li><strong>Infrastructure & Security:</strong> Hands-on experience deploying personal cloud servers and private VPNs, demonstrating a solid understanding of networking and data protection.</li>
@@ -46,43 +133,53 @@
           </ul> 
        </section>
 
-       <section id="skills">
-          <h2>Skills</h2>
-          <ul></ul>
-        </section>
-
-       <section id="projects">
-          <h2>Projects</h2>
-          <ul></ul>
+       <section id="projects" class="panel">
+          <h2><span class="cmd-icon">_</span> Projects.exe</h2>
+          <div class="projects-controls">
+              <input type="text" id="project-search" placeholder="Search projects by name..." aria-label="Search projects">
+              <select id="project-filter" aria-label="Filter projects by language">
+                  <option value="all">All Languages</option>
+              </select>
+          </div>
+          <div aria-live="polite" id="projects-status" class="sr-only"></div>
+          <ul id="project-list"></ul>
        </section>
 
-       <section id="connect">
-          <h2>Connect</h2>
+       <section id="connect" class="panel">
+          <h2><span class="cmd-icon">_</span> Network_Links</h2>
           <ul></ul>
        </section>
-       <section id="contact">
-            <h2>Leave a Message</h2>
-            <form name="leave_message">
-                <label>Name: 
-                    <input type="text" name="usersName" required>
-                </label>
-                <br>
-                <label>Email: 
-                    <input type="email" name="usersEmail" required>
-                </label>
-                <br>
-                <label>Message: 
-                    <textarea name="usersMessage" required></textarea>
-                </label>
-                <br>
-                <button type="submit">Submit</button>
+       <section id="contact" class="panel">
+            <h2><span class="cmd-icon">_</span> Init_Connection</h2>
+            <p class="contact-desc">// Open a secure channel. Transmit message payload below.</p>
+            <form id="contact-form" name="leave_message">
+                <!-- Using Web3Forms for professional email routing -->
+                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+                <div class="form-group">
+                    <label for="usersName">Name</label>
+                    <input type="text" id="usersName" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="usersEmail">Email</label>
+                    <input type="email" id="usersEmail" name="email" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="usersMessage">Message</label>
+                    <textarea id="usersMessage" name="message" required placeholder="How can I help you?"></textarea>
+                </div>
+
+                <button type="submit" id="submit-button">
+                    <span class="button-text">[ EXECUTE_TRANSMISSION ]</span>
+                    <span class="loader sr-only"></span>
+                </button>
+                <p id="form-result"></p>
             </form>
        </section>
 
-       <section id="messages">
-            <h2>Messages</h2>
-            <ul></ul>
-       </section>
+       <button id="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">
+           <i class="fa-solid fa-arrow-up"></i>
+       </button>
+
       <script src="js/index.js"></script>
     </body>
 </html>
